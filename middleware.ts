@@ -5,7 +5,7 @@ export const middleware = (req: NextRequest) => {
   const token = cookies().get('accessToken')?.value;
   const user = cookies().get('user')?.value;
 
-  if (!token || !user) {
+  if (!token /* || !user */) {
     const url = req.url.replace(req.nextUrl.pathname, '/');
     return Response.redirect(url);
   }

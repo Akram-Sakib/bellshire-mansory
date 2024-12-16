@@ -10,7 +10,7 @@ interface ISignInProps {
 const signIn = catchError(async (props: ISignInProps) => {
   const { data } = await fetcher.post('/auth/login', props);
 
-  const token = data?.data?.token; // EX: Bearer abcdefgh....
+  const token = data?.data?.accessToken; // EX: Bearer abcdefgh....
   const user = data?.data?.user;
   if (token) setCookie('accessToken', token);
   if (user) setCookie('user', user);

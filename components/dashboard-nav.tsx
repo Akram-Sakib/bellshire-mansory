@@ -14,6 +14,7 @@ import {
   TooltipProvider,
   TooltipTrigger
 } from './ui/tooltip';
+import { getCookie } from 'cookies-next';
 
 interface DashboardNavProps {
   navItems: NavItem[];
