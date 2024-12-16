@@ -10,9 +10,11 @@ export const metadata: Metadata = {
 };
 
 export default async function AuthenticationPage() {
-  const token = getCookie('accessToken');
+  // const token = getCookie('accessToken');
 
-  if (token) redirect('/dashboard');
+  // if (token) redirect('/dashboard');
+  // if (token) 
+    redirect('/dashboard');
 
   return (
     <div className="relative h-screen flex-col items-center justify-center bg-background">

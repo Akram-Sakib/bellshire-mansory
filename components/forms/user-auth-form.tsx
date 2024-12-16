@@ -35,8 +35,8 @@ export default function UserAuthForm() {
   const callbackUrl = searchParams.get('callbackUrl');
   const [loading, setLoading] = useState(false);
   const defaultValues = {
-    email: '',
-    password: '',
+    email: 'demo@gmail.com',
+    password: 'Demo@123',
     terms: true
   };
   const { toast } = useToast();
